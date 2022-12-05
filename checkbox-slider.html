@@ -10,9 +10,26 @@ height: 20px;
 background: green;
 border-radius: 20px;
 position: relative;
+transition: all 5s;
+}
+
+#id1+div:before {
+
+transition: all 5s;
+	position: absolute;
+	content: '';
+    left: 22px;
+    top: 3px;
+    height: 14px;
+    background: white;
+    width: 14px;
+    border-radius: 14px;
+    
 }
 
 #id1:checked+div:before {
+
+transition: all 5s;
 	position: absolute;
 	content: '';
     left: 2px;
