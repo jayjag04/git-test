@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+
+<style>
+
+div {
+
+position: relative;
+}
+
+  input.cb2+div.div1:after {
+  position: absolute;
+  	content:'NO';
+    height: 20px;
+    width: 40px;
+    background: #cd3c3c;
+    padding-left: 5px;
+    border-radius: 10px;
+  }
+  
+    input.cb2+div.div1:before {
+  position: absolute;
+  	content:'';
+    height: 13px;
+    width: 10px; 
+    background: white;
+    left: 28px;
+    z-index: 2;
+    margin-top: 1px;
+    border-radius: 2px;
+  }
+  
+  input.cb2:checked+div.div1 { 
+    background: #378b2c;
+  }
+  
+    
+    input.cb2:checked+div.div1:before {
+    position: absolute;
+    content: '';
+    height: 13px;
+    width: 10px;
+    /* border: 1px solid red; */
+    background: white;
+    left: 5px;
+    z-index: 2;
+    margin-top: 2px;
+    border-radius: 2px;
+    font-size: small;
+    line-height: .4rem;
+    text-size-adjust: none;
+  }
+  
+    input.cb2:checked+div.div1:after {
+    position: absolute;
+    content: 'YES';
+    height: 20px;
+    width: 40px;
+    background: #378b2c;
+    padding-left: 5px;
+    border-radius: 10px;
+    text-indent: 14px;
+    font-size: small;
+  }
+ 
+</style>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+<label for="cb2">
+  <input type="checkbox" class="cb2">
+  <div class="div1"></div>
+</label>
+
+</body>
+</html>
+
